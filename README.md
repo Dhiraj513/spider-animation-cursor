@@ -75,6 +75,4 @@ You can tweak the spider's look and behavior by editing the constants and object
 | `STEP_SPEED` | How quickly a foot moves to its new position |
 | `spider.bodyRadius` / `spider.headRadius` | Size of the body and head |
 
-## License
 
-This project is open source and available under the [MIT License](LICENSE).
