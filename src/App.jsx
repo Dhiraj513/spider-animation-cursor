@@ -1,4 +1,11 @@
 import {useRef, useEffect} from "react";
+function App() {
+  const canvasRef =useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+  
 let mouseY = canvas.height /2;
 //spider body
 
@@ -27,3 +34,8 @@ const legAngles = [
     -0.4, -0.8, -1.2, -1.6, //left angle
     0.4, 0.8, 1.2, 1.6 //right angle
 ];
+  },[]);
+  return <canvas ref={canvasRef} width={800} height={600}/>;
+
+}
+export default App;
